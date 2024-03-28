@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Ivan Novaković</title>
+  </head>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" role="button">Home</a></li>
+    </ul>
+  </nav>
+  <body>
+    <header style="text-align:center">
+        <h1>Ivan Novaković</h1>
+        <p> A graduate from Delft University of Technology. My passion lies in engineering and its impact on people. </p>
+        <a href="resume.html" role="button" class="outline" style="width: 200px">CV/Resumé</a>
+        <h1 style="text-align: center;"><a href="projects.html" role="button" class="outline">Projects</a>
+            <a href="about.html" role="button" class="outline">About</a></h1>
+    </header>
+    <main class="container">
+        <article class="grid">
+          <div>
+                <p style="font-size: larger;">This section shows a selection of projects I participated in, which most influenced my professional development.</p>
+                <br>
+                <details>
+                  <summary>AI-assisted requirements definition in a waterfall project management approach </summary>
+                  <p style="font-size:smaller;">August 2023</p>
+                  <p style="font-style: italic;">Using OpenAI’s API</p>
+                  <blockquote>
+                <ul>
+                  <u>Problem:</u>Transforming 1400 project requirements into acceptance criteria for a train station renovation project in the Netherlands was a time-consuming process.
+                  Manually completing this task would take a minimum of 3-4 weeks, posing a significant challenge to meeting project deadlines.</p>
+                  <br><u>Analysis:</u>
+                  <li style="margin-left: 100px;">As a Systems Engineer, I faced the challenge of efficiently defining acceptance criteria for numerous project requirements, without compromising the quality and accuracy of the acceptance criteria.</li>
+                  <li style="margin-left: 100px;">The criteria-creation process appeared to have a repetitive pattern, where these were very implicitly stated in each project requirement.</li>
+                  <br><u>Conclusions:</u>
+                <li style="margin-left: 100px;">I discovered a pattern in the criteria-creation process, which was mostly a language-intensive process.</li>
+                <li style="margin-left: 100px;">The new introduction of large language models offered an opportunity to automate this process, given the apparent pattern and repetitiveness</li>
+                <p><u>Solution:</u> 
+                  <li style="margin-left: 100px;">Integration of ChatGPT API with Microsoft Excel significantly improved productivity by automating the creation of acceptance criteria.</li>
+                  <li style="margin-left: 100px;">This success demonstrates the potential of AI-powered tools to streamline complex processes and free up time for other project activities.</li>
+                  <li style="margin-left: 100px;">Share the success story and lessons learned with colleagues to encourage adoption of similar AI-driven solutions in future projects.</li>
+                <br>
+                  </p>
+                </ul></p>
+                </details>
+                <details>
+                  <summary>Hydrogen-distribution network optimalization in the Rotterdam harbor and its surroundings</summary>
+                  <p style="font-size:smaller;">March-April 2022</p>
+                  <p style="font-style: italic;">Using Python’s network analysis modules</p>
+                  <blockquote>
+                <ul>
+                  <u>Problem:</u> The Netherlands is considering increasing hydrogen production in the coming decades.
+                  Existing gas pipelines in the Rotterdam harbor could be repurposed for distributing hydrogen throughout the area, including to agricultural producers and homes in Rotterdam.</p>
+                  <br><u>Analysis:</u>
+                  <li style="margin-left: 100px;">Various approaches, such as Dijkstra's algorithm, were used to identify profitable solutions.</li>
+                  <li style="margin-left: 100px;">Different criteria were considered, including demand and supply optimizations, as well as the costs associated with renovating the pipelines.</li>
+                  <li style="margin-left: 100px;">Attention was also given to solutions with the least number of nodes, shortest total length, and shortest total length of the entire network.</li>
+                  <br><u>Conclusions:</u>
+                <li style="margin-left: 100px;">Repurposing existing gas pipelines for hydrogen distribution offers potential benefits in terms of infrastructure utilization and cost savings.</li>
+                <li style="margin-left: 100px;">Optimization efforts must consider both demand and supply factors as well as the costs of renovating the pipelines.</li>
+                <li style="margin-left: 100px;">Different algorithms and criteria can be employed to identify the most suitable solutions based on various factors, such as network efficiency and cost-effectiveness.</li>
+                <p><u>Solution:</u> 
+                  <li style="margin-left: 100px;">Evaluate and prioritize pipeline transformation options based on demand and supply considerations, as well as the costs associated with pipeline renovation.</li>
+                  <li style="margin-left: 100px;">Consider solutions that minimize the number of nodes, shorten the total length of pipelines, and optimize the efficiency of the entire network.</li>
+                <br>
+                  </p>
+                </ul></p>
+                </details>
+                <details>
+                  <summary>Optimizing a COVID-19 vaccine station</summary>
+                  <p style="font-size:smaller;">March-April 2021</p>
+                  <p style="font-style: italic;">Using Simio discrete simulation modelling solutions</p>
+                  <blockquote>
+                <ul>
+                  <u>Problem:</u> There was a need to identify bottlenecks in the vaccination process to optimize efficiency and immunize the Dutch population as soon as possible.</p>
+                  <br><u>Analysis:</u>
+                  <li style="margin-left: 100px;">The university was tasked with creating a discrete-event model of a COVID-19 vaccination site.</li>
+                  <li style="margin-left: 100px;">Testing options in the modeling software were utilized to randomize variables and identify bottlenecks.</li>
+                  <br><u>Conclusions:</u>
+                <li style="margin-left: 100px;">The biggest bottlenecks were identified in the reception area.</li>
+                <li style="margin-left: 100px;">Implementing a ticketing system rather than e.g. multiple waiting lines, following the FIFO principle, was found to minimize processing times.</li>
+                <li style="margin-left: 100px;">After vaccination, only individuals with potential sensitivity to the vaccine required a 15-minute waiting period.</li>
+                <p><u>Solution:</u> 
+                  <li style="margin-left: 100px;">Implement a ticketing system in the reception area of vaccination sites to assign users to the nearest available desk based on the FIFO principle.</li>
+                  <li style="margin-left: 100px;">Reserve 15-minute waiting times post-vaccination for individuals with potential sensitivity to the vaccine, such as seniors and patients with other health issues.</li>
+                <br>
+                  </p>
+                </ul></p>
+                </details>
+            <details>
+                <summary>Reporting and resolving waste issues in The Hague</summary>
+                <p style="font-size:smaller;">May-June 2020</p>
+                <p style="font-style: italic;">Restructuring of the MOR (Melding openbare ruimte) chain to improve the efficiency of the waste reporting process</p>
+                <blockquote>
+              <ul>
+                <u>Problem:</u> reported full waste containers and public cleanliness issues often untreated</p>
+                <br><u>Analysis:</u>
+                <li style="margin-left: 100px;">Problem owner engaged in problem analysis</li>
+                <li style="margin-left: 100px;">Information-management process modelled through UML and IDEF0 diagrams</li>
+                <br><u>Conclusions:</u>
+                <li style="margin-left: 100px;">Limited reporting capabilities - telephone only</li>
+                <li style="margin-left: 100px;">Incorrect information in reports due to miscommunication reporter/telephone operator</li>
+                <li style="margin-left: 100px;">Limited information from operators through to waste management companies</li>
+                <br>
+                <p><u>Solution:</u> 
+                  <li style="margin-left: 100px;">Improve information gathering through web and mobile platform with expanded variables (photos, geo-location and text description)</li>
+                  <li style="margin-left: 100px;">Introduce a single ticketing system</li>
+                  <li style="margin-left: 100px;">Give access to ticketing platform for waste management companies</li>
+                </blockquote>
+                <img src="uml_mor.png" alt="UML diagram of chosen solution for MOR project The Hague"</p></p>
+              </details>
+          </div>
+        </article>
+      </main>
+    
+  </body>
+
+  <footer class="container-fluid">
+    <small>Built with <a href="https://picocss.com" class="secondary">Pico</a> •
+      <a href="https://github.com/picocss/examples/tree/master/v1-sign-in/" class="secondary">Source code</a
+      ></small>
+  </footer>
+  
+
+
+</html>
