@@ -1,149 +1,264 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-  <title style="position: center;">Ivan Novaković</title>
-</head>
-<nav class="is-fixed-above-lg">
-  <ul></ul>
-  <ul>
-    <li>
-      <a style="align-items: center;" class="contrast"><strong style="font-size: xx-large;">Ivan Novaković</strong></a>
-  </ul>
-  <ul></ul>
-</nav>
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="css/pico.grey.css">
+  <title>Ivan Novaković</title>
 
-<body style="min-height: 742px; background-color:rgb(17, 25, 31);">
-  <header class="is-fixed-above-lg is-fixed"
-    style="background-image: url(background.jpg); background-position-y: 65%">
-    <p style="text-align: center; color: aliceblue; outline-color: black;">A graduate from Delft University of Technology. My passion lies in engineering and its impact on people.</p>
-  </header>
-  <main class="container has-table-of-contents page-nav">
-    <nav>
-      <ul>
-        <li><a href="index.html" class="contrast">Home</a></li>
-      </ul>
-      <ul>
-        <li><a href="experience.html" class="contrast">Experience</a></li>
-        <li></li>
-        <li><a href="education.html" class="contrast">Education</a></li>
-        <li></li>
-        <li><a href="contact.html" class="contrast">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <article style="margin-top: 0px;">
-      <div>
-      <hgroup style="text-align: center;">
-        <h1 href="#contact" id="contact">About me</h1>
-        <br>
-        <div class="grid">
-          <div><img src="profile.jpeg" alt="hi :)" style="max-width: 80%;"></div>
-          <div>
-            <p style="text-align: justify; color: aliceblue;">Hello
-              <br><br>
-              <u>About me in a nutshell:</u> Hello again!
-            </p>
+  <style>
+        @media (max-width: 768px) {
+      .main-container {
+        padding-top: 60px;
+        flex-direction: column;
+      }
+
+      aside {
+        display: none;
+      }
+
+      main {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        padding: 20px;
+      }
+
+      header {
+        width: 100%;
+        left: 0;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Centered Container -->
+  <div style="max-width: 1200px; margin: 0 auto">
+
+    <!-- Fixed Navbar -->
+    <header style=" top: 0; width: 100%; max-width: 1200px; left: 50%; background-image: url(background.jpg); background-position-y: 65%; padding: 2.7rem 0; z-index: 1000; min-height: 168px;">
+      <p style="text-align: center; color: aliceblue; ">A graduate from Delft University of Technology. My passion lies in
+        technology and its impact on people.</p>
+    </header>
+
+    <div style="display: flex; padding-top: 80px; align-content: center;">
+      <!-- Sidebar -->
+      <aside style="width: 200px; height: calc(100vh - 80px); z-index: 999; overflow-y: auto; overflow-x: hidden; position: fixed; top: 160px; left: 50%; transform: translateX(-600px);">
+        <nav style="padding-top: 20px;">
+          <ul>
+            <li><p style="color: aliceblue">Ivan Novaković</p></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main style="flex-grow: 1; margin-left: auto; max-width: 800px; margin-right: auto;">
+        <article>
+          <hgroup style="text-align: center;">
+            <h1 href="#about" id="about">About me</h1>
+            <br>
+            <div class="grid">
+              <div><img src="profile.jpeg" alt="hi :)" style="max-width: 80%;"></div>
+              <div>
+                <p style="text-align: justify; color: aliceblue;">Hello
+                  <br><br>
+                  <u>About me in a nutshell:</u> Hello again!
+                </p>
+              </div>
+            </div>
+          </hgroup>
+
+          <h1 href="#skills" id="skills" style="text-align: center;">Skills</h1>
+          <div class="grid">
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Languages</th>
+                    <th scope="col"> </th> 
+                    <!-- Could put in "Proficiency" above -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Serbo-Croatian</th>
+                    <td>Native</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dutch</th>
+                    <td>C1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">English</th>
+                    <td>C1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">French</th>
+                    <td>A2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <table>
+                <thead data-theme>
+                  <tr>
+                    <th scope="col">IT Skills</th>
+                    <th scope="col"> </th>
+                    <!-- Could put in "Level" above -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Python</th>
+                    <td>Intermediate</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Excel</th>
+                    <td>Intermediate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-      </hgroup>
-      <h1 href="#skills" id="skills" style="text-align: center;">Skills</h1>
-      <div class="grid">
-        <div>
-          <table>
-            <thead data-theme="light">
-              <tr>
-                <th scope="col">Languages</th>
-                <th scope="col">Fluency</th>
-              </tr>
-            </thead>
+
+          <h1 href="#skills" id="skills" style="text-align: center">Other</h1>
+          <table style="width: 100%;">
             <tbody>
               <tr>
-                <th scope="row">Serbo-Croatian</th>
-                <td>Native</td>
-
+                <th scope="row" style="text-align: left; width: 50%;">Driving licence</th>
+                <td style=" width: 50%;">B</td>
               </tr>
               <tr>
-                <th scope="row">Dutch</th>
-                <td>C1</td>
-
+                <th scope="row" style="text-align: left; width: 50%;">Sports</th>
+                <td style="width: 50%;">Gym, Skiing</td>
               </tr>
               <tr>
-                <th scope="row">English</th>
-                <td>C1</td>
-
-              </tr>
-              <tr>
-                <th scope="row">French</th>
-                <td>A2</td>
-
+                <th scope="row" style="text-align: left; width: 50%;">Consultancy</th>
+                <td style="width: 50%;">Energy transition, Tech, Project Management</td>
               </tr>
             </tbody>
-            <tfoot>
-            </tfoot>
           </table>
+          
+        </article>
 
-        </div>
-        <table>
-          <thead data-theme="light">
-            <tr>
-              <th scope="col">IT Skills</th>
-              <th scope="col">Proficiency</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Python</th>
-              <td>Intermediate</td>
+        <article class="grid">
+          <div>
+            <h1 href="#experience" id="experience" style="text-align: center;">Experience</h1>
+                <blockquote>
+                  <h6>Systems Engineer | BESIX Unitec Nederland - Randstad, NL</h6>
+                  <p><em>July 2023 - Present</em>
+                    <br><small>High-level design of infra-automation systems while also managing projects with hardware and
+                      software engineers.
+                    </small>
+                  </p>
+                </blockquote>
+                <blockquote>
+                  <h6>Co-Owner, content creator and DJ | Addicta Events – Rotterdam, NL</h6>
+                  <p><em>January 2022 - November 2022</em>
+                    <br><small>As the COVID-19 pandemic lockdown regulations loosened, together with close friends I
+                      organized two events at renown Rotterdam clubs. Given my love for music and ambition for it, I
+                      believed that there was a market gap to be filled in the nightclub scene of the city with a focus on a
+                      quality house music experience. For this initiative, I had to utilize and further develop my
+                      communication, DJing, content-creation and stakeholder management skills. Having successfully sold out
+                      both events, I learned the key factors for a successful event project management while also
+                      discovering personal improvement points for further endeavors.
+                    </small>
+                  </p>
+                </blockquote>
+    
+                <blockquote>
+                  <h6> Consultant | Erasmus Tech Consulting – Rotterdam, NL</h6>
+                  <p><em>September 2020 - June 2021</em>
+                    <br><small>Working for ETConsulting gave me an opportunity to do tech-consulting for a Rotterdam-based
+                      startup specialized in tendering software, delivering a market segmentation and marketing strategy.
+                      Having worked for such a company opened my eyes into the difficult first steps of starting a business
+                      in tech while simultaneously trying to sell an innovative product.</small>
+                  </p>
+                </blockquote>
+    
+                <blockquote>
+                  <h6>Assistant Construction Manager | STAN PROJEKT – Budva, MNE </h6>
+                  <p><em>March 2019 - August 2019</em>
+                    <br><small>I decided to start working in Construction Management at my family-run business. This taught
+                      me the exact construction process of mixed residential and commercial properties, while also learning
+                      how to deal with problems as they arise. Most importantly I saw the value of good stakeholder
+                      management, timely risk management and people skills in strategic investment choices for achieving
+                      project success.</small>
+                  </p>
+                </blockquote>
+    
+                <blockquote>
+                  <h6>Line Engineer| Lamex Foods Europe – SRB</h6>
+                  <p><em>June 2018 - August 2018</em>
+                    <br><small>This position gave me the opportunity to learn the basic principles of how a berry-processing
+                      line works and is supposed to be maintained. I worked as a member of a four-person group and served as
+                      an assistant in fixing the machines when necessary. In the case that a part of the line would stop
+                      even for several minutes, several hundreds of kilograms of fruit would be processed and packed later.
+                      Preventing longer delays meant there had to be a team of line technicians present the whole day in
+                      order to quickly fix issues when they occurred. Next to this, I consulted the company on renewable
+                      energy choices given their high energy consumption for freezing up to 8.000 tons of fruit.</small>
+                  </p>
+                </blockquote>
+    
+    
+          </div>
+        </article>
+        <article class="grid">
+          <div>
+            <h1 href="#education" id="education" style="text-align: center;">Education</h1>
+            <blockquote>
+              <h6>TU Delft – BSc Systems Engineering, Policy and Management</h6>
+              <p><em>September 2019 - June 2023</em>
+                <br><small>Activities and societies: Event planning, music production, DJingActivities and societies: Event
+                  planning, music production, DJing
+                  Specialized in Energy & Industry and current problems herein, such as the energy crisis, gas shortage,
+                  energy politics and others. Currently following a minor in Project Management.</small>
+              </p>
+            </blockquote>
+            <blockquote>
+              <h6>TU Delft – BSc Aerospace Engineering</h6>
+              <p><em>September 2017 – June 2018</em>
+                <br><small></small>
+              </p>
+            </blockquote>
+            <blockquote>
+              <h6>International Baccalaureate Diploma Programme</h6>
+              <p><em>September 2018 – June 2021</em>
+                <br><small>During my IBDP studies I have resided for a year each on the Isle of Wight in England to study at
+                  Ryde School and in Belgrade in Serbia in Gimnazija Crnjanski.</small>
+              </p>
+            </blockquote>
+          </div>
+        </article>
 
-            </tr>
-            <tr>
-              <th scope="row">Excel</th>
-              <td>Intermediate</td>
-            </tr>
-          </tbody>
-          <tfoot>
-          </tfoot>
-        </table>
-
-      </div>
-
-      <h1 href="#skills" id="skills" style="text-align: center;">Other</h1>
-      <table>
-        <tbody>
-          <tr>
-            <th scope="row">Driving licence</th>
-            <td>B</td>
-
-          </tr>
-          <tr>
-            <th scope="row">Sports</th>
-            <td>Gym, Skiing</td>
-          </tr>
-          <tr>
-            <th scope="row">Consultancy</th>
-            <td>Energy transition, Tech, Project Management</td>
-          </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-      </table>
+        <article class="grid">
+          <div>
+            <hgroup style="text-align: center;">
+              <h1 href="#contact" id="contact">Contact me:</h1>
+              <br>
+              <p>+31 (0) 63 658 7721
+                <br>e-mail: ivan.novakovic.prive@gmail.com
+                <br>Amsterdam
+              <section>
+                <a href="https://www.linkedin.com/in/ivan-novakovic-25735b120/" target=”_blank”
+                  class="contrast">LinkedIn</a>
+              </section>
+    
+            </hgroup>
+          </div>
+        </article>
+      </main>
     </div>
-    </article>
-
-
-
-  </main>
-  <footer class="container-fluid">
-    <small>Built with <a href="https://picocss.com" class="secondary">Pico</a> •
-      <a href="https://github.com/picocss/examples/tree/master/v1-sign-in/" class="secondary">Source code</a></small>
-  </footer>
+  </div>
 </body>
-
-
-
-
 
 </html>
